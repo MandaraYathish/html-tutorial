@@ -1,0 +1,32 @@
+.font-styler{
+
+    color: white;  
+    font-size: 20px
+}
+body{
+    background-color: rgb(88, 50, 213);
+}
+h1{
+    color:pink;
+}
+h2{
+    color:yellow;
+}
+h3{
+   color: orange;
+}
+h4{
+    color: brown;
+}
+h5{
+    color: black;
+}
+h6{
+    color:blue;
+}
+.dog-img{
+    
+    width: 200px;
+    height: 200px;
+
+}
