@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>arrays and loops</title>
+  </head>
+  <body>
+    
+    <script>
+        const myArray= [10,20,30];
+        console.log(myArray);
+        console.log(myArray[2]);
+        myArray[0]=99; //to change first value of array.
+        console.log(myArray);
+
+        [1, true,'hello',{name : 'ball'},[1, 2]]
+        console.log(typeof [1 , 2]);
+        console.log(Array.isArray ([1 , 2]));
+
+        console.log(myArray.length);
+
+        myArray.push(200);
+        console.log(myArray);
+        myArray.splice([2]); //remove end values
+        console.log(myArray);
+        myArray.splice(1, 1);
+        console.log(myArray);
+        myArray.push(100,200,300);
+        console.log(myArray);
+    </script>
+  </body>
+</html>

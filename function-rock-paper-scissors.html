@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper scissors</title>
+  </head>
+  <body>
+    <p>Rock paper scissors</p>
+         <button  onclick=" playgame('rock');">Rock</button>
+
+        <button onclick=" playgame('paper');" >Paper</button>
+
+        <button onclick="playgame('scissors');">scissors</button>
+
+
+    <script>
+        //  to pick value from computer
+         function pickcomputermove(){
+          const Randomnumber= Math.random();
+          let computermove= '';
+            
+            if(Randomnumber>=0 && Randomnumber<1/3){
+              computermove='Rock';
+            }
+            else if(Randomnumber>=1/3 && Randomnumber<2/3){
+              computermove='paper';
+            }
+            else if (Randomnumber>=2/3 && Randomnumber<1){
+              computermove='scissors';
+            }
+            return computermove; 
+         }
+
+        // compare select value with computer value
+         function playgame(playmove){
+                  const computermove =  pickcomputermove();
+
+                  let result=''
+                    if (playmove === 'rock'){ 
+                    if (computermove === 'Rock'){
+                      result='Tie';
+                    }else if(computermove === 'paper'){
+                      result= 'You lose';
+                    }else if(computermove === 'scissors'){
+                      result=' you win';
+                    }
+  
+                    alert(`You have picked ${playmove}. computer picked ${computermove}. ${result}`);
+
+
+
+              }else if (playmove === 'paper'){
+
+                if (computermove === 'Rock'){
+              result1='You win';
+            }else if(computermove === 'paper'){
+              result1= 'Tie';
+            }else if(computermove === 'scissors'){
+              result1='You lose';
+            } alert(`You have picked ${playmove}. computer picked ${computermove}. ${result}`);
+
+
+              }else if (playmove ==='scissors'){
+
+
+                if (computermove === 'Rock'){
+              result2='You lose';
+            }else if(computermove === 'paper'){
+              result2= 'You win';
+            }else if(computermove === 'scissors'){
+              result2=' Tie';
+            }
+            
+             alert(`You have picked ${playmove}. computer picked ${computermove}. ${result}`);
+              }
+
+         }
+    </script>
+  </body>
+</html>
